@@ -5,20 +5,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    /*overflow: hidden;*/
+    /*align-content: center;*/
+    justify-content: space-between;
+    overflow: hidden;
+}
+.motherDiv{
 }
 .buttonLike{
-    position: relative;
-    top: 30px;
 }
+
 .motherLi{
     position: relative;
     bottom: 35px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
 
 }
 .motherLi li{
@@ -26,4 +27,38 @@
     float: left;
     margin: 0 10px;
     line-height: 1.8;
+    margin-bottom: 0.3em;
+}
+.motherLi li{
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #f05d22;
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+    -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+}
+.buttonLike{
+    height: 40px;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 13px;
+    background: #f05d22;
+    box-shadow: 0 -3px #373738 inset;
+    transition: 0.2s;
+}
+a.buttonLike:hover { background: #f05d22; }
+a.buttonLike:active {
+    background: #373738;
+    border-left: 10px solid #f05d22;
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+    -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
 }
