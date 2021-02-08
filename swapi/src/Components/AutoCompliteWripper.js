@@ -42,6 +42,7 @@ export default observer(() => {
     }, [likeFlag])
 
     return (<>
+        <div className='First'>
         <div className='motherDiv'>
             <Autocomplete
 
@@ -61,25 +62,26 @@ export default observer(() => {
             />
         </div>
         <div className='motherLi'>
-            <li>{selected.name}</li>
-            <li>{selected.height}</li>
-            <li>{selected.mass}</li>
-            <li>{selected.hair_color}</li>
-            <li>{selected.skin_color}</li>
-            <li>{selected.eye_color}</li>
-            <li>{selected.birth_year}</li>
-            <li>{selected.home}</li>
-            <li>{selected.car}</li>
-            <li>{selected.film}</li>
+            <li>{`Name: ${selected.name}`}</li>
+            <li>{`Height: ${selected.height}`}</li>
+            <li>{`Mass: ${selected.mass}`}</li>
+            <li>{`Hair color: ${selected.hair_color}`}</li>
+            <li>{`Skin color: ${selected.skin_color}`}</li>
+            <li>{`Eye color: ${selected.eye_color}`}</li>
+            <li>{`Birth: ${selected.birth_year}`}</li>
+            <li>{`Home: ${selected.home}`}</li>
+            <li>{`Car: ${selected.car}`}</li>
+            <li>{`Movie: ${selected.film}`}</li>
         </div>
 
-        <button onClick={() => {
+        <button className='buttonLike' onClick={() => {
             addLikes(selected.name)
             setLikeFlag(!likeFlag)
         }}>
             Like
         </button>
         {likesPiople && <div>{likesPiople.map((e) => <p>{e.name}</p>)}</div>}
+        </div>
     </>)
 })
 

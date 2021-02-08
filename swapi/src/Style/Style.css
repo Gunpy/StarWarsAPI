@@ -1,15 +1,29 @@
-/*.motherDiv{
+.First{
     width: 100%;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
-    overflow: auto;
-}*/
-.motherDiv p {
+    /*overflow: hidden;*/
+}
+.buttonLike{
+    position: relative;
+    top: 30px;
+}
+.motherLi{
+    position: relative;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+}
+.motherLi li{
+    list-style-type: none;
+    float: left;
+    margin: 0 10px;
+    line-height: 1.8;
 }
